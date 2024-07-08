@@ -1,0 +1,198 @@
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 120px;
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .menu button {
+    font-size: 2rem;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  .navbar .modal {
+    position: fixed;
+    top: 14.5%;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 400px;
+    margin: 0 10%;
+    height: 220px;
+    flex-direction: column;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(1, 1, 1, 0.537); 
+    transition: 5s;
+  }
+  .navbar .modal a {
+    text-decoration: none;
+    margin: 0 30px;
+    position: relative;
+    font-size: 1rem;
+    padding: 10px;
+    background: transparent;
+    color: white;
+  }
+  .navbar .modal a::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .navbar .modal a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding-top: 20px;
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .navbar .menu button {
+    font-size: 2rem;
+    border: none;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  .navbar .modal {
+    position: fixed;
+    top: 20%;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 70%;
+    margin: 0 10%;
+    height: 220px;
+    flex-direction: column;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(1, 1, 1, 0.537); 
+    transition: 5s;
+  }
+  .navbar .modal a {
+    text-decoration: none;
+    margin: 0 30px;
+    position: relative;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+  }
+  .navbar .modal a::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .navbar .modal a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navbar {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 100px;
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .navbar .links a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 0 15px;
+  }
+  .navbar .links a::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .navbar .links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .navbar .menu button {
+    display: none;
+  }
+  .navbar .modal {
+    display: none;
+  }
+}

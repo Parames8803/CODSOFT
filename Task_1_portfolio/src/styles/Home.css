@@ -1,0 +1,169 @@
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+  }
+  .home .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .content .title {
+    display: none;
+  }
+  .home .content .intro {
+    font-family: "Handlee", cursive;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .home .content .intro span {
+    font-size: 30px;
+    color: brown;
+  }
+  .home .content .desc {
+    font-size: 16px;
+    padding-top: 25px;
+    text-align: center;
+  }
+  .home .content .desc span {
+    font-weight: bold;
+    color: #34a0a4;
+  }
+  .home .content .connect {
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    cursor: pointer;
+  }
+  .home .content .connect:hover {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+    border-color: brown;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .home{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+    scroll-behavior: smooth;
+  }
+  .home .content .title {
+    font-size: 25px;
+    color: tomato;
+    font-weight: bold;
+  }
+  .home .content .title span {
+    color: blue;
+    font-weight: bold;
+  }
+  .home .content .intro {
+    font-family: "Handlee", cursive;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .home .content .intro span {
+    font-size: clamp(30px, 35px, 40px);
+    color: brown;
+  }
+  .home .content .desc {
+    font-size: 16px;
+    padding-top: 25px;
+    text-align: center;
+    margin: 0 15%;
+  }
+  .home .content .desc span {
+    font-weight: bold;
+    color: #34a0a4;
+  }
+  .home .content .connect {
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    cursor: pointer;
+  }
+  .home .content .connect:hover {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+    border-color: brown;
+  }
+  .home .content .connect .name {
+    color: #d9ed92;
+  }
+  .home .connect .icon {
+    padding: 0px 10px;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .home {
+    display: grid;
+    place-items: center;
+    margin: 0 5%;
+    width: 80%;
+    padding: 0px 80px 50px 80px;
+    scroll-behavior: smooth;
+  }
+  .home .content {
+    padding: 0px 80px;
+  }
+  .home .content .title {
+    font-size: 25px;
+    color: tomato;
+    font-weight: bold;
+  }
+  .home .content .title span {
+    color: blue;
+  }
+  .home .content .intro {
+    font-family: "Handlee", cursive;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .home .content .intro span {
+    font-size: clamp(30px, 35px, 40px);
+    color: brown;
+    font-weight: bold;
+  }
+  .home .content .desc {
+    font-size: 20px;
+    padding-top: 25px;
+    text-align: center;
+  }
+  .home .content .desc span {
+    font-weight: bold;
+    color: blue;
+  }
+  .home .content .connect {
+    margin: 20px 40%;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    cursor: pointer;
+    display: grid;
+  }
+  .home .content .connect:hover {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+    border-color: brown;
+  }
+}

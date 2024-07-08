@@ -1,0 +1,197 @@
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .experience {
+    padding-bottom: 50px;
+  }
+  .experience .title {
+    font-size: 20px;
+    color: tomato;
+    font-weight: bold;
+  }
+  .experience .title span {
+    color: blue;
+  }
+  .experience .buttons {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .experience button {
+    font-size: 15px;
+    padding: 5px 25px;
+    border: none;
+    cursor: pointer;
+    transition: black 0.3s ease;
+    height: 60px;
+    width: fit-content;
+    font-weight: bold;
+    color: black;
+  }
+  .experience button.active {
+    border-bottom: 3px solid brown;
+  }
+  .experience .content {
+    transition: opacity 5s ease;
+  }
+  .experience .tab-content {
+    display: none;
+  }
+  .experience .tab-content .card .title {
+    margin: 50px 0px 0px;
+    font-size: 18px;
+  }
+  .experience .tab-content .card .title span {
+    color: brown;
+  }
+  .experience .tab-content .card .timeline {
+    font-size: 14px;
+    margin: 5px 0px;
+    color: #34a0a4;
+  }
+  .experience .tab-content .card .desc {
+    margin: 30px 0px;
+    font-size: 15px;
+  }
+  .experience .tab-content.active {
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .experience {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .experience .title {
+    font-size: 20px;
+    color: tomato;
+    font-weight: bold;
+  }
+  .experience .title span {
+    color: blue;
+  }
+  .experience .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: auto;
+    align-items: center;
+  }
+  .experience button {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    transition: black 0.3s ease;
+    height: 60px;
+    width: auto;
+    font-weight: bold;
+    color: black;
+  }
+  .experience button.active {
+    border-bottom: 3px solid brown;
+  }
+  .experience .content {
+    transition: opacity 5s ease;
+    margin: 0 15%;
+    padding: 20px;
+    border-left: 1px solid black;
+    margin-top: 50px;
+  }
+  .experience .tab-content {
+    display: none;
+  }
+  .experience .tab-content .card .title {
+    margin: 10px 0px;
+    font-size: 18px;
+  }
+  .experience .tab-content .card .title span {
+    color: brown;
+  }
+  .experience .tab-content .card .timeline {
+    font-size: 14px;
+    margin: 5px 0px;
+    color: #34a0a4;
+  }
+  .experience .tab-content .card .desc {
+    margin: 30px 0px;
+    font-size: 15px;
+  }
+  .experience .tab-content.active {
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .experience {
+    padding: 0px 80px 50px 80px;
+    margin: 0 5%;
+    width: 80%;
+  }
+  .experience .title {
+    font-size: 25px;
+    color: tomato;
+    font-weight: bold;
+  }
+  .experience .title span {
+    color: blue;
+    font-weight: bold;
+  }
+  .experience .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience button {
+    font-size: 18px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    transition: black 0.3s ease;
+    height: 60px;
+    width: auto;
+    font-weight: bold;
+    color: black;
+  }
+  .experience button.active {
+    border-bottom: 3px solid brown;
+  }
+  .experience .content {
+    transition: opacity 5s ease;
+    padding: 20px;
+    margin: 50px 25%;
+    width: 500px;
+  }
+  .experience .tab-content {
+    display: none;
+  }
+  .experience .tab-content .card {
+    border-left: 5px solid black;
+    padding: 20px;
+  }
+  .experience .tab-content .card .title {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: brown;
+  }
+  .experience .tab-content .card .title span {
+    color: tomato;
+  }
+  .experience .tab-content .card .timeline {
+    font-size: 15px;
+    margin: 5px 0px;
+    color: blue;
+  }
+  .experience .tab-content .card .desc {
+    margin: 30px 0px;
+    font-size: 15px;
+  }
+  .experience .tab-content.active {
+    display: block;
+  }
+}
