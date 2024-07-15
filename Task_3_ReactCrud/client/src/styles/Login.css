@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    box-shadow: 10px 23px 16px 10px rgba(0,0,0,0.2);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 410px;
+    margin-top: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.container h1{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container .login-frm{
+    margin: 15px;
+}
+
+.container label{
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.container input{
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid white;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.container input::after{
+    border: 1px solid white;
+    border-bottom: 2px solid red;
+}
+
+.container button{
+    width: 30%;
+    margin-left: 120px;
+    margin-right: 150px;
+    padding: 8px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.container .login-frm a{
+    text-decoration: none;
+    color: purple;
+    margin-left: 80px;
+}
+.container .login-frm p{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 10px;
+}
+
+
+@media screen and (max-width: 365px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 80px;
+        box-shadow: none;
+    }
+    
+}

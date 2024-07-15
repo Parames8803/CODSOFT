@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "intro bg";
+}
+.intro{
+    grid-area: intro;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.intro h1{
+    padding: 20px;
+    font-size: 40px;
+}
+.intro p{
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.intro .introbtn button{
+    padding: 8px 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.intro .introbtn button:hover{
+    color: white;
+    background-color: purple;
+    border: 1px solid purple;
+}
+.intro .introbtn button a{
+    text-decoration: none;
+    color: white;
+}
+.bg{
+    grid-area: bg;
+    background-image: url('../images/main-bg.png');
+    height: 465px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas: 
+    "desc desc desc"
+    "add add add"
+}
+.desc{
+    grid-area: desc;
+    text-align: center;
+    padding-top: 20px;
+}
+.addbtn{
+    grid-area: add;
+    padding: 20px;
+}
+.addbtn button{
+    border-radius: 100px;
+    border: 1px solid gray;
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+}
+.addbtn button a{
+    color: red;
+}
+.addbtn button:hover{
+    border: 5px solid purple;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cardinput cardinput cardinput"
+    "add add add";
+    text-align: center;
+}
+.cardinput{
+    grid-area: cardinput;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    margin: 0px;
+}
+.cardinput input{
+    width: 300px;
+    align-self: center;
+    padding: 10px;
+}
+.cardinput button{
+    width: 100px;
+    align-self: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.cardinput button:hover{
+    border: 2px solid gray;
+}
+.slide{
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 110px;
+    flex-wrap: wrap;
+}
+
+.add{
+    grid-area: add;
+    width: 300px;
+    height: 280px;
+    box-shadow: 10px 23px 16px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid black;
+}
+.eventcard{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid white;
+}
+.eventcard button{
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+.eventcard .del{
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid purple;
+}
+.eventcard  h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.eventcard p{
+    color: black;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+/* .eventcard a{
+    color: red;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bolder;
+} */
+/* .eventcard a:hover{
+    color: white;
+    background-color:red;
+    border-radius: 10px;
+    padding: 10px;
+} */
+
+@media screen and (max-width: 365px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Raleway', sans-serif;;
+        height: fit-content;
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "bg"
+        "intro";
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main .intro{
+        grid-area: intro;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .main .intro h1{
+        font-size: 22px;
+    }
+    .main .bg{
+        background-image: url('../images/main-bg.png');
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .events .desc h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
