@@ -1,97 +1,97 @@
-*{
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.modal_container_layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -50px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.4fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas: "brand contact menu";
+  padding: 20px;
+}
+.brand {
+  grid-area: brand;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.contact {
+  grid-area: contact;
+  padding: 15px;
+  text-align: center;
+}
+.contact a {
+  padding: 10px;
+  font-size: 25px;
+  color: purple;
+}
+.menu {
+  grid-area: menu;
+  padding: 15px;
+  font-size: 25px;
+  text-align: right;
+}
+.menu button {
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  color: purple;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 365px) {
+  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-.header{
+  }
+
+  .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.4fr;
-    grid-template-rows: 0.5fr;
-    grid-template-areas: 
-    "brand contact menu";
-    padding: 20px;
-}
-.brand{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "brand contact menu";
+    margin: 0px;
+    padding: 5px;
+  }
+  .brand {
     grid-area: brand;
-    font-size: 25px;
-    margin-left: 50px;
-}
-.contact{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .contact {
     grid-area: contact;
     padding: 15px;
     text-align: center;
-}
-.contact a{
-    padding: 10px;
-    font-size: 25px;
+    display: flex;
+  }
+  .contact a {
+    padding: 8px;
+    font-size: 23px;
     color: purple;
-}
-.menu{
+  }
+  .menu {
     grid-area: menu;
     padding: 15px;
     font-size: 25px;
     text-align: right;
-}
-.menu button{
+  }
+  .menu button {
     background-color: white;
     border: none;
     font-size: 25px;
     color: purple;
     cursor: pointer;
+    padding: 8px;
+    margin-right: 0px;
+  }
 }
-
-@media screen and (max-width: 365px){
-    *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
-
-    .header{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "brand contact menu";
-        margin: 0px;
-        padding: 5px;
-    }
-    .brand{
-        grid-area: brand;
-        font-size: 20px;
-        margin: 10px;
-    }
-    .contact{
-        grid-area: contact;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-    }
-    .contact a{
-        padding: 8px;
-        font-size: 23px;
-        color: purple;
-    }
-    .menu{
-        grid-area: menu;
-        padding: 15px;
-        font-size: 25px;
-        text-align: right;
-    }
-    .menu button{
-        background-color: white;
-        border: none;
-        font-size: 25px;
-        color: purple;
-        cursor: pointer;
-        padding: 8px;
-        margin-right: 0px;
-    }
-    
-
-}
-
-
-
